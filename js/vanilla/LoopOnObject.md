@@ -14,9 +14,18 @@ console.log(Object.keys(obj))
 ```
 So, now we can easily run for loop on that:
 ```js
-for (const k of Object.keys(obj)) {
-  // Logic here, eg. if(obj[k] === 'test')
+for (const el of Object.keys(obj)) {
+  // Logic here, eg. if(obj[el] === 'test')
 }
+```
+
+**Method 2**
+```js
+Object.keys(obj).forEach((el) => {
+  // if (obj[el] === 'test') {
+  //   return logic
+  // }
+})
 ```
 ***
 
